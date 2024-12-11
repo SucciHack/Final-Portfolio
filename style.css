@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  background: #0F0F0F;
+  color: #E6E6E6;
+  width: 95%;
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 15rem;
+  padding: 2rem;
+}
+@media (max-width: 900px) {
+  nav {
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+  }
+}
+@media (max-width: 480px) {
+  nav {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+nav .links {
+  background: #141414;
+  padding: 0.5rem;
+  border-radius: 20px;
+  display: flex;
+  gap: 4rem;
+}
+nav .links a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background: #191919;
+  border: 2px black solid;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+nav .links :active, nav .links :hover {
+  background: #D03227;
+}
+@media (max-width: 900px) {
+  nav .links {
+    display: none;
+  }
+}
+nav .contact a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background: #191919;
+  border: 2px black solid;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+nav .contact :active, nav .contact :hover {
+  background: #D03227;
+}
+nav .menu {
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 900px) {
+  nav .menu {
+    display: block;
+  }
+}
+
+.sectionOne {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+@media (max-width: 900px) {
+  .sectionOne {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+}
+.sectionOne .one {
+  background: #141414;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 2px black solid;
+  border-radius: 20px;
+}
+.sectionOne .one .flexOne {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.sectionOne .one .flexOne .profilePhoto {
+  width: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px black solid;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.sectionOne .one .flexOne .profilePhoto img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.sectionOne .one .flexOne .content .online {
+  background: #262626;
+  padding: 0.5rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.2rem 1rem;
+  border: 2px black solid;
+  font-size: small;
+}
+.sectionOne .one .flexOne .content .online i {
+  font-size: 8px;
+  color: green;
+}
+.sectionOne .one .flexOne .content h1 {
+  margin-top: 2rem;
+}
+.sectionOne .one .flexOne .content .contacts-content {
+  margin-top: 2rem;
+}
+.sectionOne .one .flexOne .content .contacts-content .contacts {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.sectionOne .one .aboutme {
+  background: #191919;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  border-radius: 20px;
+  border: 2px black solid;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.sectionOne .two .flexOne {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: #191919;
+  border-radius: 20px;
+  border: 2px black solid;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.sectionOne .two .flexOne .rating .rate {
+  padding: 1rem;
+}
+.sectionOne .two .flexOne .rating .rate .fourtyrate {
+  font-size: 2rem;
+  text-align: center;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  background: #191919;
+  padding: 1rem;
+  border: 2px black solid;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.sectionOne .two .flexOne .rating .rate .fourtyrate span {
+  color: red;
+}
+.sectionOne .two .flexOne .rating .rate .startrate {
+  text-align: center;
+  background: #191919;
+  margin-top: 0.5rem;
+  padding: 1.5rem;
+  color: red;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: 2px black solid;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.sectionOne .two .flexOne .rating .rate .startrate i {
+  margin-right: 5px;
+}
+.sectionOne .two .flexOne .flexrate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+  gap: 2rem;
+  padding: 0.5rem;
+}
+.sectionOne .two .flexOne .flexrate .flexrateOne {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #191919;
+  padding: 3rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  height: 100px;
+  border: 2px black solid;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.sectionOne .two .flexOne .flexrate .flexrateOne i {
+  background: #191919;
+  border: 2px black solid;
+  border-radius: 10rem;
+  padding: 0.8rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.sectionOne .techStack {
+  text-align: center;
+  padding: 1rem;
+  background: #191919;
+  border: 2px black solid;
+  border-radius: 20px;
+}
+.sectionOne .techStack .techHead {
+  border-bottom: 2px black solid;
+}
+.sectionOne .techStack .techHead h2 {
+  margin-bottom: 0.5rem;
+}
+.sectionOne .techStack .techHead p {
+  color: red;
+}
+.sectionOne .techStack .techHead i {
+  margin-right: 0.5rem;
+}
+.sectionOne .techStack .techStackItems {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 3rem;
+}
+.sectionOne .techStack .techStackItems .itemOne {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+  background: #191919;
+  border: 2px black solid;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.sectionOne .techStack .techStackItems .itemOne i {
+  background: #191919;
+  border: 2px black solid;
+  padding: 0.5rem;
+  border-radius: 10px;
+}/*# sourceMappingURL=style.css.map */
