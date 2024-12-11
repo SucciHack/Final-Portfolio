@@ -100,11 +100,6 @@ nav .menu {
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   }
 }
-@media (max-width: 480px) {
-  .sectionOne {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
-}
 .sectionOne .one {
   background: #141414;
   padding: 1rem;
