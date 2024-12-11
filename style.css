@@ -100,6 +100,11 @@ nav .menu {
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   }
 }
+@media (max-width: 480px) {
+  .sectionOne {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
 .sectionOne .one {
   background: #141414;
   padding: 1rem;
@@ -139,7 +144,7 @@ nav .menu {
   font-size: small;
 }
 .sectionOne .one .flexOne .content .online i {
-  font-size: 8px;
+  font-size: 10px;
   color: green;
 }
 .sectionOne .one .flexOne .content h1 {

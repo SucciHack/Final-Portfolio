@@ -5,9 +5,9 @@
     @media (max-width: 900px) {
         grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     }
-    // @media (max-width: 480px) {
-    //     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    // }
+    @media (max-width: 480px) {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
     .one{
         background: #141414;
         padding: 1rem;
@@ -46,7 +46,7 @@
                     border: 2px black solid;
                     font-size: small;
                     i{
-                        font-size: 8px;
+                        font-size: 10px;
                         color: green;
                     }
                 }
