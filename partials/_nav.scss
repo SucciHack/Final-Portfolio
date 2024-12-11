@@ -6,12 +6,12 @@ nav{
     padding: 2rem;
     @media (max-width:900px) {
         justify-content: space-between;
-        width: 80%;
+        // width: 80%;
         margin: auto;
     }
     @media (max-width:480px) {
         justify-content: space-between;
-        width: 100%;
+        // width: 100%;
     }
     .links{
         background: #141414;
