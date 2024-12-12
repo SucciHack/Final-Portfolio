@@ -5,6 +5,9 @@
     @media (max-width: 900px) {
         grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     }
+    @media (max-width: 480) {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
     .one{
         background: #141414;
         padding: 1rem;
