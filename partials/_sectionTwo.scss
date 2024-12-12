@@ -4,6 +4,12 @@
     gap: 1rem;
     margin-top: 1rem;
     margin-bottom: 20rem;
+    @media (max-width: 900px) {
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+    @media (max-width: 480) {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
     #one{
         border-radius: 20px;
         line-height: 2rem;
