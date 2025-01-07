@@ -9,9 +9,17 @@
 body {
   background: #0F0F0F;
   color: #E6E6E6;
+  overflow-x: hidden;
+}
+
+.sectionTwo {
   width: 95%;
   margin: 0 auto;
-  overflow-x: hidden;
+}
+
+.sectionOne {
+  width: 95%;
+  margin: 0 auto;
 }
 
 nav {

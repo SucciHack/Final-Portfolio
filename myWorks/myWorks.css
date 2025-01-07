@@ -1,0 +1,267 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 95%;
+  margin: 0 auto;
+  background-color: #000;
+  font-family: Arial, sans-serif;
+}
+
+.cards-containerOne {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+@media (max-width: 900px) {
+  .cards-containerOne {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.firstone {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  background: #1a1a1a;
+  border: 1px solid #333333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 10px;
+}
+.firstone .card {
+  background-color: #111;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1.5rem;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: #1a1a1a;
+  border: 1px solid #333333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+}
+.firstone .card h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: #f05a28;
+}
+.firstone .card h1 span {
+  font-size: 1.5rem;
+  color: #fff;
+}
+.firstone .card p {
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.firstone .card p .icon {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+  color: #f05a28;
+}
+
+.secondOne {
+  background: #1a1a1a;
+  border: 1px solid #333333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 10px;
+}
+.secondOne .card {
+  background: #1a1a1a;
+  border: 1px solid #333333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 10px;
+}
+.secondOne .twoCards {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.secondOne .twoCards .card {
+  width: 50%;
+  border-radius: 10px;
+  background: #1a1a1a;
+  border: 1px solid #333333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+}
+
+.thirdOne {
+  background: #1a1a1a;
+  border: 1px solid #333333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.cards-containerTwo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+@media (max-width: 480px) {
+  .cards-containerTwo {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 900px) {
+  .cards-containerTwo {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.cards-containerTwo #card {
+  width: 1009px;
+}
+@media (max-width: 900px) {
+  .cards-containerTwo #card {
+    width: 100%;
+  }
+}
+.cards-containerTwo .card {
+  background: #1a1a1a;
+  border: 1px solid #333333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  width: 500px;
+  padding: 1rem 0;
+}
+.cards-containerTwo .card .projectContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin-bottom: 0.5rem;
+}
+.cards-containerTwo .card .projectContainer h1 {
+  font-size: 1rem;
+  padding: 1rem;
+}
+.cards-containerTwo .card .projectContainer button {
+  background: rgba(255, 255, 255, 0.342);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  color: white;
+  margin: 1rem;
+}
+.cards-containerTwo .card .cardContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.cards-containerTwo .card .cardContainer .cardProj {
+  width: 300px;
+  overflow: hidden;
+  margin-left: 1rem;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.cards-containerTwo .card .cardContainer .cardProj img {
+  width: 100%;
+  height: 150px;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cards-containerTwo .card .cardContainer .cardProj .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.cards-containerTwo .card .cardContainer .cardProj .content button {
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  background: rgba(255, 255, 255, 0.322);
+  color: white;
+  border-radius: 3rem;
+}
+@media (max-width: 900px) {
+  .cards-containerTwo .card {
+    width: 100%;
+  }
+}
+.cards-containerTwo #contactCard {
+  background: #1a1a1a;
+  border: 1px solid #333333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cards-containerTwo #contactCard .title {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.cards-containerTwo #contactCard .main-text {
+  position: relative;
+  display: inline-block;
+  margin: 20px 0;
+}
+.cards-containerTwo #contactCard .main-text span {
+  color: #f97316;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.cards-containerTwo #contactCard .main-text .tooltip {
+  visibility: hidden;
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 0.8rem;
+}
+.cards-containerTwo #contactCard .main-text .tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: #333333 transparent transparent transparent;
+}
+.cards-containerTwo #contactCard .main-text:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+.cards-containerTwo #contactCard .buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.cards-containerTwo #contactCard .buttons .btn {
+  background: #333333;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.cards-containerTwo #contactCard .buttons .btn:hover {
+  background: #ff4d4d;
+}/*# sourceMappingURL=myWorks.css.map */
