@@ -11,6 +11,7 @@ body {
   color: #E6E6E6;
   width: 95%;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 nav {
