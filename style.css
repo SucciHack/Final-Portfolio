@@ -113,6 +113,11 @@ nav .menu {
   gap: 1rem;
   padding: 0.5rem;
 }
+@media (max-width: 480px) {
+  .sectionOne .one .flexOne {
+    flex-direction: column;
+  }
+}
 .sectionOne .one .flexOne .profilePhoto {
   width: 300px;
   border-radius: 20px;
@@ -120,12 +125,25 @@ nav .menu {
   border: 2px black solid;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+@media (max-width: 480px) {
+  .sectionOne .one .flexOne .profilePhoto {
+    width: 400px;
+  }
+}
 .sectionOne .one .flexOne .profilePhoto img {
   width: 100%;
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
+}
+@media (max-width: 480px) {
+  .sectionOne .one .flexOne .profilePhoto img {
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: auto;
+  }
 }
 .sectionOne .one .flexOne .content .online {
   background: #262626;
