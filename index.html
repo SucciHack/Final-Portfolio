@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <title>Sam's Final Portfolio</title>
 </head>
@@ -65,17 +66,17 @@
                     <div class="flexrateOne">
                         <i class="fa-brands fa-twitter"></i>
                         <p>12.6k <br> followers</p>
-                        <i class="fa-solid fa-arrow-right fa-spin"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
                     </div>
                     <div class="flexrateOne">
                         <i class="fa-brands fa-instagram"></i>
                         <p>12.6k <br> followers</p>
-                        <i class="fa-solid fa-arrow-right fa-spin"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
                     </div>
                     <div class="flexrateOne">
                         <i class="fa-brands fa-whatsapp"></i>
                         <p>12.6k <br> followers</p>
-                        <i class="fa-solid fa-arrow-right fa-spin"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
                     </div>
                 </div>
         </div>
@@ -130,37 +131,76 @@
                     </div>
                 </div>
                 <div class="card">
-                    <p class="head">Education</p>
+                    <p class="head"><i class='bx bxs-award'></i>Awards</p>
                     <div class="content">
-                        <p class="hierachy">Full Stack developer</p>
-                        <p>Some Engineering College</p>
-                        <p>Year Of Passing :2016</p>
+                        <p class="hierachy">Top Designer</p>
+                        <p>mydream.com</p>
                     </div>
                 </div>
             </div>
             <div class="flex">
-                <div class="card">
-                    <p class="head">Education</p>
-                    <div class="content">
-                        <p class="hierachy">Full Stack developer</p>
-                        <p>Some Engineering College</p>
-                        <p>Year Of Passing :2016</p>
+                <div class="card" id="cardDown">
+                    <p class="head"><i class='bx bx-leaf'></i> Languages</p>
+                    <div class="content" id="cardDownContent">
+                        <button>English</button>
+                        <button>French</button>
                     </div>
                 </div>
-                <div class="card">
-                    <p class="head">Education</p>
-                    <div class="content">
-                        <p class="hierachy">Full Stack developer</p>
-                        <p>Some Engineering College</p>
-                        <p>Year Of Passing :2016</p>
+                <div class="card" id="cardDown">
+                    <p class="head"><i class='bx bxs-time' ></i> Education</p>
+                    <div class="content" id="cardDownContent">
+                        <button>English</button>
+                        <p>to</p>
+                        <button>French</button>
                     </div>
                 </div>
             </div>
         </div>
         <div class="two" id="one">
-
+            <div class="card">
+                <div class="header">
+                    <svg class="header-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="20" height="14" x="2" y="7" rx="2" ry="2"/>
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                    </svg>
+                    <span class="header-text">Work Experience</span>
+                </div>
+        
+                <div class="content">
+                    <div class="left">
+                        <div class="main-content">
+                            <div>
+                                <h3 class="title">Founder & CEO</h3>
+                                <div class="date">Jan 2023 to Present</div>
+                            </div>
+                            <p class="description">
+                                Launched a groundbreaking venture tailored for Figma designers.
+                            </p>
+                            <div class="subtitle">Workflow Expert</div>
+                        </div>
+                    </div>
+                    <div class="link-box">
+                        <h4 class="link-title">Produce UI</h4>
+                        <a href="https://produce-ui.com" class="link" target="_blank" rel="noopener noreferrer">
+                            produce-ui.com
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="three" id="one"></div>
+        <div class="three" id="one">
+            <div class="card">
+                <p class="title">Have an Idea?</p>
+                <div class="main-text">
+                    <span>Let's Work Together</span>
+                    <span class="tooltip">Contact Me</span>
+                </div>
+                <div class="buttons">
+                    <button class="btn schedule"><span>📅</span> Schedule Call</button>
+                    <button class="btn email"><span>📧</span> Email Me</button>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

@@ -10,7 +10,7 @@ body {
   background: #0F0F0F;
   color: #E6E6E6;
   width: 95%;
-  margin: auto;
+  margin: 0 auto;
 }
 
 nav {
@@ -47,14 +47,14 @@ nav .links a {
   align-items: center;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   background: #191919;
-  border: 2px black solid;
+  border: 1px black solid;
   padding: 0.8rem 1.5rem;
   border-radius: 10px;
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
 nav .links :active, nav .links :hover {
-  background: #D03227;
+  background: #f97316;
 }
 @media (max-width: 900px) {
   nav .links {
@@ -69,7 +69,7 @@ nav .contact a {
   gap: 0.5rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   background: #191919;
-  border: 2px black solid;
+  border: 1px black solid;
   padding: 0.8rem 1.5rem;
   border-radius: 10px;
   transition: 0.3s ease-in-out;
@@ -98,16 +98,11 @@ nav .menu {
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   }
 }
-@media (max-width: 480) {
-  .sectionOne {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-}
 .sectionOne .one {
   background: #141414;
   padding: 1rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  border: 2px black solid;
+  border: 1px black solid;
   border-radius: 20px;
 }
 .sectionOne .one .flexOne {
@@ -139,7 +134,7 @@ nav .menu {
   align-items: center;
   gap: 0.5rem;
   padding: 0.2rem 1rem;
-  border: 2px black solid;
+  border: 1px black solid;
   font-size: small;
 }
 .sectionOne .one .flexOne .content .online i {
@@ -159,90 +154,85 @@ nav .menu {
   padding: 1rem;
   margin-top: 0.5rem;
   border-radius: 20px;
-  border: 2px black solid;
+  border: 1px black solid;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .sectionOne .flexOne {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  background: #191919;
-  border-radius: 20px;
-  border: 2px black solid;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  align-items: center;
+  background: #141414;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid black;
+  gap: 1rem;
+}
+.sectionOne .flexOne .rating {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 50%;
 }
 .sectionOne .flexOne .rating .rate {
-  padding: 1rem;
+  background: #191919;
+  border-radius: 10px;
+  border: 1px solid black;
 }
 .sectionOne .flexOne .rating .rate .fourtyrate {
   font-size: 2rem;
   text-align: center;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-  background: #191919;
-  padding: 1rem;
-  border: 2px black solid;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-weight: bold;
+  padding: 1.5rem;
 }
 .sectionOne .flexOne .rating .rate .fourtyrate span {
-  color: red;
+  color: #f97316;
 }
 .sectionOne .flexOne .rating .rate .startrate {
-  text-align: center;
-  background: #191919;
-  margin-top: 0.5rem;
+  color: #f97316;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid black;
+  width: 100%;
+  gap: 0.5rem;
   padding: 1.5rem;
-  color: red;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border: 2px black solid;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.sectionOne .flexOne .rating .rate .startrate i {
-  margin-right: 5px;
+  text-align: center;
 }
 .sectionOne .flexOne .flexrate {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-left: 1rem;
   gap: 1rem;
+  width: 50%;
 }
-.sectionOne .flexOne .flexrate .flexrateOne {
+.sectionOne .flexOne .flexrateOne {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  padding: 1.5rem;
   gap: 0.5rem;
   background: #191919;
-  padding: 2rem;
-  margin-right: 0.5rem;
-  font-size: 1rem;
+  border: 1px solid black;
   border-radius: 10px;
-  height: 100px;
-  border: 2px black solid;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.sectionOne .flexOne .flexrate .flexrateOne i {
-  background: #191919;
-  border: 2px black solid;
-  border-radius: 10rem;
-  padding: 0.8rem;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+.sectionOne .flexOne .flexrateOne i {
+  background: #141414;
+  padding: 1rem;
+  border-radius: 3rem;
+  border: 1px solid black;
 }
 .sectionOne .techStack {
   text-align: center;
   padding: 1rem;
   background: #191919;
-  border: 2px black solid;
+  border: 1px black solid;
   border-radius: 20px;
 }
 .sectionOne .techStack .techHead {
-  border-bottom: 2px black solid;
+  border-bottom: 1px black solid;
 }
 .sectionOne .techStack .techHead h2 {
   margin-bottom: 0.5rem;
 }
 .sectionOne .techStack .techHead p {
-  color: red;
+  color: #f97316;
 }
 .sectionOne .techStack .techHead i {
   margin-right: 0.5rem;
@@ -259,24 +249,24 @@ nav .menu {
   justify-content: start;
   gap: 1rem;
   background: #191919;
-  border: 2px black solid;
+  border: 1px black solid;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 1rem;
   border-radius: 10px;
 }
 .sectionOne .techStack .techStackItems .itemOne i {
   background: #191919;
-  border: 2px black solid;
+  border: 1px black solid;
   padding: 0.5rem;
   border-radius: 10px;
 }
 
 .sectionTwo {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   margin-top: 1rem;
-  margin-bottom: 20rem;
+  margin-bottom: 2rem;
 }
 @media (max-width: 900px) {
   .sectionTwo {
@@ -296,7 +286,6 @@ nav .menu {
 .sectionTwo .one {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   padding: 1rem;
 }
@@ -307,22 +296,195 @@ nav .menu {
 }
 .sectionTwo .one .flex .card {
   background: #191919;
-  border: 2px black solid;
-  padding: 0.5rem 1rem;
+  border: 1px solid #333333;
   border-radius: 20px;
+  width: 100%;
 }
 .sectionTwo .one .flex .card .head {
-  color: red;
+  color: #f97316;
   text-align: center;
-  border-bottom: 2px black solid;
+  border-bottom: 1px solid black;
   margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
 }
 .sectionTwo .one .flex .card .content {
   text-align: center;
   font-size: small;
+  padding: 0 1rem;
 }
 .sectionTwo .one .flex .card .content .hierachy {
   font-weight: bold;
   margin-bottom: 0.5rem;
   font-size: 1rem;
+}
+.sectionTwo .one .flex #cardDown {
+  height: 120px;
+}
+.sectionTwo .one .flex #cardDown .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.sectionTwo .one .flex #cardDown .content button {
+  padding: 0.3rem 0.5rem;
+  background: #262626;
+  border: none;
+  border-radius: 3rem;
+  border: 1px solid black;
+  color: #737373;
+}
+.sectionTwo .two {
+  border: 1px solid #333333;
+}
+.sectionTwo .two .card .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid black;
+  padding: 1rem;
+}
+.sectionTwo .two .card .header-icon {
+  width: 20px;
+  height: 20px;
+  color: #f97316;
+}
+.sectionTwo .two .card .header-text {
+  color: #f97316;
+  font-weight: 500;
+}
+.sectionTwo .two .card .content {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2rem;
+  padding: 1rem;
+}
+.sectionTwo .two .card .content .left {
+  width: 90%;
+}
+.sectionTwo .two .card .content .left .main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #191919;
+}
+.sectionTwo .two .card .content .left .title {
+  color: #ffffff;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0;
+}
+.sectionTwo .two .card .content .left .date {
+  color: #a1a1aa;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+.sectionTwo .two .card .content .left .description {
+  color: #a1a1aa;
+  font-size: 0.875rem;
+  margin: 0;
+}
+.sectionTwo .two .card .content .left .subtitle {
+  color: #71717a;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.sectionTwo .two .card .content .link-box {
+  background-color: rgba(39, 39, 42, 0.5);
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+}
+.sectionTwo .two .card .content .link-box .link-title {
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin: 0 0 0.25rem 0;
+}
+.sectionTwo .two .card .content .link-box .link {
+  color: #a1a1aa;
+  font-size: 0.75rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.sectionTwo .two .card .content .link-box .link:hover {
+  color: #d4d4d8;
+}
+.sectionTwo .three .card {
+  background: #1a1a1a;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sectionTwo .three .card .title {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.sectionTwo .three .card .main-text {
+  position: relative;
+  display: inline-block;
+  margin: 20px 0;
+}
+.sectionTwo .three .card .main-text span {
+  color: #f97316;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.sectionTwo .three .card .main-text .tooltip {
+  visibility: hidden;
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 0.8rem;
+}
+.sectionTwo .three .card .main-text .tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: #333333 transparent transparent transparent;
+}
+.sectionTwo .three .card .main-text:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+.sectionTwo .three .card .buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.sectionTwo .three .card .buttons .btn {
+  background: #333333;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.sectionTwo .three .card .buttons .btn:hover {
+  background: #ff4d4d;
 }/*# sourceMappingURL=style.css.map */
